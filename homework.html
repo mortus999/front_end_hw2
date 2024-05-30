@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- The DOCTYPE is the declaration saying we are coding in HTML -->
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1>Enter you're <i>email</i> here </h1>
+    <!-- <h3>Enter</h3>
+    <h6>Come Hither</h6> -->
+    <!-- Header Font Sizes tags -->
+    <!-- em, b, i, strong are Text Formatting tags -->
+    <br>  
+            <label for="email">Email (required):</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="Email Here"
+                autocomplete="on"
+                pattern="[\w]+@[\w]+.com"
+                title="Please provide a valid email address"
+                multiple
+                required>
+                <div role="alert" aria-live="assertive"></div>
+                <button type="submit">Submit</button>
+
+
+
+
+
+
+
+
+                <form onSubmit="handlesubmit">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" name="quantity" min="0" max="100" step="2">
+                    <div role="alert" aria-live="assertive"></div>
+                    
+                    
+                    
+                    
+                    
+                    <br>
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" min="2024-01-01">
+                    <div role="alert" aria-live="assertive"></div>
+                    <br>
+                <!-- title is what will be displayed in the input doesn't match pattern -->
+            <br>
+    <!-- paragraph tag -->
+    <br> 
+    <input type="range" min="0" max="100" value="50" oninput="rangeValue.innerText = this.value">
+    <p id="rangeValue">100</p>   
+    <!-- break element aka enter -->
+    <h3>pick your favorite progamming language</h3>
+    <hr>
+
+    <label for="avatar">Choose your favorite programming language</label>
+    <select name="avator" id="avator" multiple>
+        <option value="Aang">Html</option>
+        <option value="Katara">python</option>
+        <option value="Toph">c++</option>
+        <option value="Zuko">C</option>
+    </select>
+    <hr>
+   
+    <!-- ol, ul are parent elements/divs -->
+    <ol>
+<h3>What is ur coding experience?</h3>
+        <!-- li aka list items are children elements/divs -->
+        <label for="Your_coding_experience?">Your coding experience?</label>
+        <input type="checkbox" id="beginner" name="beginner" value="beginner">
+        <label for="avatar1">Beginner</label>
+        <input type="checkbox" id="Mid" name="Mid" value="Mid">
+        <label for="avatar2">Mid</label>
+        <input type="checkbox" id="choice3" name="choice3" value="coding_jesus">
+        <label for="avatar3">Coding Jesus</label>
+        <div role="alert" aria-live="assertive"></div>
+        <br>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+
+    </ol>
+    
+    <br>
+    
+
+
+</body>
+
+
+</html>
